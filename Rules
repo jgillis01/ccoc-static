@@ -1,0 +1,64 @@
+#!/usr/bin/env ruby
+require 'compass'
+require 'pry'
+Compass.add_project_configuration('config.rb')
+
+passthrough '/javascripts/*'
+
+#compile '/recordings/.*' do
+#  filter :erb
+#  layout '/default.*'
+#end
+
+compile '/**/*.html' do
+  layout '/default.*'
+  filter :erb
+end
+
+# This is an example rule that matches Markdown (.md) files, and filters them
+# using the :kramdown filter. It is commented out by default, because kramdown
+# is not bundled with Nanoc or Ruby.
+#
+compile '/**/*.md' do
+  filter :kramdown
+  layout '/default.*'
+end
+
+route '/**/*.{html,md}' do
+  if item.identifier =~ '/index.*'
+    '/index.html'
+  else
+    item.identifier.without_ext + '/index.html'
+  end
+end
+
+compile '/style/*' do
+  filter :sass, Compass.sass_engine_options
+end
+
+compile '/style/_*' do
+# don’t compile partials
+end
+
+compile '/**/*' do
+  write item.identifier.to_s
+end
+
+compile '*' do
+  filter :erb
+  layout 'default'
+end
+
+### Routing rules
+
+route '/style/_*' do
+# don't output partials, so return nil
+  nil
+end
+
+route '/style/*' do
+# don't generate a directory like we do for HTML files
+  item.identifier.chop + '.css'
+end
+
+layout '/**/*', :erb

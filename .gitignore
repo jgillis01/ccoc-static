@@ -1,0 +1,5 @@
+output/*
+.sass-cache/*
+tmp/*
+aws-env.sh
+content/recordings/*

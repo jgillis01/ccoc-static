@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Central Church of Christ - <%= @item[:title] %></title>
+    <link rel="stylesheet" href="/style/screen.scs.css">
+
+    <!-- you don't need to keep this, but it's cool for stats! -->
+    <meta name="generator" content="Nanoc <%= Nanoc::VERSION %>">
+  </head>
+  <body>
+      <div id="main" class="container">
+        <div class="row">
+          <div class="col-md-1"></div>
+          <div class="col-md-10">
+            <div class="row header">
+              <header class="col-md-12">
+                <h1 class="text-center"> Central Church of Christ</h1>
+              </header>
+            </div>
+            <div class="row content">
+              <div id="sidebar" class="col-md-3">
+                <ul>
+                  <li><a href="http://centralchurchofchrist.net/">Home</a></li>
+                  <li><a href="http://centralchurchofchrist.net/about-us">About Us</a></li>
+                  <li><a href="http://centralchurchofchrist.net/recordings">Old Recordings</a></li>
+                  <li><a href="/recordings">New Recordings</a></li>
+                </ul>
+              </div>
+              <div id="content" class="col-md-6">
+                <%= yield %>
+              </div>
+              <div id="info" class="col-md-3">
+                <h3 id="nav">Navigation</h3>
+                <ul>
+                  <% @items.find_all('/recordings/**/*.html').each do |index| %>
+                    <li class="nav">
+                      <div>
+                        <a href="<%= index.identifier.to_s.gsub('.html', '') %>"><%= index.identifier.to_s.gsub('/recordings','').gsub('.html','')[1..-1].gsub('/','-') %></p>
+                      </div>
+                    </li>
+                  <% end %>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-1"></div>
+        </div>
+      </div>
+    <script src="/javascripts/jquery-3.2.1.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+    <script src="/javascripts/bootstrap.min.js"></script>
+  </body>
+</html>

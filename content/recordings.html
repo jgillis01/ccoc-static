@@ -1,0 +1,15 @@
+<h3>Recordings</h3>
+<ul id="recordings">
+  <% latest = @items.find_all('/recordings/**/*.html').first.identifier.to_s.gsub('.html','') %>
+  <% @items.find_all("#{latest}/*.yaml").each do |rec| %>
+    <li class="recording">
+      <p>Title: <%= rec[:title] %></p>
+      <p>Author: <%= rec[:author] %></p>
+      <p>Date: <%= rec[:date] %></p>
+        <audio controls="controls">
+        Your browser does not support the <code>audio</code> element.
+        <source src="https://s3.amazonaws.com/ccoc-recordings/<%= File.basename(rec.path, '.yaml') %>.mp3" type="audio/mp3">
+      </audio>
+    </li>
+  <% end %>
+</ul>

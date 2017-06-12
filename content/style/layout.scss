@@ -1,0 +1,271 @@
+
+body 
+{
+	margin:0;
+	padding:20px 0 80px;
+}
+
+.diyw .altcolor {
+	background-color:#FFFFFF;
+}
+.diyw div#container {
+	margin:0 auto;
+	width:940px;
+}
+.diyw div#header {
+	background:#fff;
+	margin-bottom:4px;
+	position:relative;
+	z-index:1;
+}
+.diyw .diyweb {
+    white-space: normal;
+    word-wrap: break-word;
+}
+.diyw div#emotionheader {
+	height:210px;
+	padding:5px;
+}
+.diyw div#emotionheader strong#emotionheader_titel {
+	z-index:2;
+}
+.diyw div.overlay {
+	position:absolute;
+	z-index:4;
+}
+.diyw div#overlay_top {
+	background:url(https://www.centralchurchofchrist.net/s/img/1002-overlay_top.png) no-repeat;
+	height:8px;
+	left:0px;
+	top:-3px;
+	width:937px;
+}
+.diyw div#overlay_bottom {
+	background:url(https://www.centralchurchofchrist.net/s/img/1002-overlay_bottom.png) no-repeat;
+	bottom:-2px;
+	height:7px;
+	left:-2px;
+	width:944px;
+}
+.diyw div#overlay_left {
+	background:url(https://www.centralchurchofchrist.net/s/img/1002-overlay_left.png) repeat-y;
+	height:100%;
+	left:-2px;
+	top:0px;
+	width:7px;
+}
+.diyw div#overlay_right {
+	background:url(https://www.centralchurchofchrist.net/s/img/1002-overlay_right.png) repeat-y;
+	height:100%;
+	right:-2px;
+	top:0px;
+	width:7px;
+}
+* html .diyw div#overlay_top {
+	background-image:none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="https://www.centralchurchofchrist.net/s/img/1002-overlay_top.png");
+}
+* html .diyw div#overlay_bottom {
+	background-image:none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="https://www.centralchurchofchrist.net/s/img/1002-overlay_bottom.png");
+}
+* html .diyw div#overlay_left {
+	background-image:none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="https://www.centralchurchofchrist.net/s/img/1002-overlay_left.png");
+}
+* html .diyw div#overlay_right {
+	background-image:none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="https://www.centralchurchofchrist.net/s/img/1002-overlay_right.png");
+}
+.diyw div#wrapper {
+	background:url(https://www.centralchurchofchrist.net/s/img/1002-wrapper_bg_top.png) no-repeat 50% 0;
+	margin:0px -2px 2px;
+	padding:5px 2px 0;
+	position:relative;
+	width:940px;
+	zoom:1;
+}
+.diyw div#wrapper_inner {
+	background:url(https://www.centralchurchofchrist.net/s/img/1002-wrapper_bg_bottom.png) no-repeat 50% 100%;
+	margin:0 -2px;
+	padding:0 2px 5px;
+	position:relative;
+	zoom:1;
+}
+.diyw div#wrapper_innermost {
+	background:url(https://www.centralchurchofchrist.net/s/img/1002-wrapper_bg.png) repeat-y 50% 0;
+	margin:0 -2px;
+	padding:0 2px;
+	position:relative;
+	zoom:1;
+}
+* html .diyw div#wrapper {
+	background:none !important;
+	margin:0;
+	padding:0;
+}
+* html .diyw div#wrapper_inner {
+	background:none !important;
+	margin:0 0 5px;
+	padding:0;
+}
+* html .diyw div#wrapper_innermost {
+	background-image:url(https://www.centralchurchofchrist.net/s/img/1002-wrapper_bg.gif) !important;
+}
+.diyw div#navigation {
+	float:left;
+	padding:10px 10px;
+	width:200px;
+}
+.diyw ul.mainNav1 {
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+.diyw ul.mainNav1 li {
+	width:200px;
+}
+.diyw ul.mainNav1 li a {
+	border-bottom:1px solid #cfd0d1;
+	display:block;
+	padding:4px 10px;
+	text-decoration:none;
+	width:180px;
+}
+.diyw ul.mainNav1 li a:hover, .diyw ul.mainNav1 li a.current {
+	font-weight:bold;
+}
+.diyw ul.mainNav2 {
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+.diyw ul.mainNav2 li a {
+	padding:4px 10px 4px 30px;
+	width:160px;
+}
+.diyw ul.mainNav3 {
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+.diyw ul.mainNav3 li a {
+	padding:4px 10px 4px 40px;
+	width:150px;
+}
+.diyw div#content {
+	float:right;
+	width:720px;
+}
+.diyw div#mainContent {
+	float:left;
+	padding:30px 20px;
+	width:460px;
+}
+.diyw div#subContent {
+	float:right;
+	padding:30px 10px;
+	width:200px;
+}
+.diyw div#footer {
+	background:url(https://www.centralchurchofchrist.net/s/img/1002-footer_bg_top.png) no-repeat 50% 0;
+	clear:both;
+	margin:-1px -2px 0;
+	padding:1px 2px 0;
+	position:relative;
+	width:940px;
+	zoom:1;
+}
+.diyw div#footer_inner {
+	background:url(https://www.centralchurchofchrist.net/s/img/1002-wrapper_bg_bottom.png) no-repeat 50% 100%;
+	margin:0 -2px -3px;
+	padding:0 2px 3px;
+	position:relative;
+	zoom:1;
+}
+.diyw div#footer_innermost {
+	background:url(https://www.centralchurchofchrist.net/s/img/1002-wrapper_bg.png) repeat-y 50% 0;
+	margin:0 -2px;
+	padding:0 2px;
+	position:relative;
+	zoom:1;
+}
+.diyw div#footer_wrapper {
+	background-image:url(https://www.centralchurchofchrist.net/s/img/1002-footer_gradient.png);
+	background-position:0 100%;
+	background-repeat:repeat-x;
+	height:56px;
+	padding:10px 20px;
+}
+* html .diyw div#footer, * html .diyw div#footer_inner, * html .diyw div#footer_innermost {
+	background:none !important;
+}
+* html .diyw div#footer_wrapper {
+	background-image:none;
+}
+
+body .diyw
+{
+	color:#666666;
+	font:normal 11px/140% Verdana, Arial, Helvetica, sans-serif;
+}
+ .diyw p, .diyw table, .diyw td {
+	color:#666666;
+	font:normal 11px/140% Verdana, Arial, Helvetica, sans-serif;
+}
+.diyw h1 {
+	color:#000000;
+	font:bold 14px/140% Verdana, Arial, Helvetica, sans-serif;
+}
+.diyw h2 {
+	color:#666666;
+	font:bold 12px/140% Verdana, Arial, Helvetica, sans-serif;
+}
+.diyw a.trackbackUrl, 
+.diyw a.trackbackUrl:link,
+.diyw a.trackbackUrl:visited,
+.diyw a.trackbackUrl:hover,
+.diyw a.trackbackUrl:active {
+	background:#EEEEEE none repeat scroll 0% 0%;
+	border:1px solid black;
+	color:#333333;
+	padding:2px;
+	text-decoration:none;
+}
+.diyw a:link,
+.diyw a:visited {
+	color:#DB2F2C;
+	text-decoration:underline;
+}
+.diyw a:active, 
+.diyw a:hover {
+	color:#DB2F2C;
+	text-decoration:none;
+}
+.diyw div.hr {
+	border-bottom-style:dotted;
+	border-bottom-width:1px;
+	border-color:#CCCCCC;
+	height:1px;
+}
+.diyw .altcolor,
+.diyw .altcolor p {
+	color:#000000;
+}
+.diyw .altcolor h1 {
+	color:#000000;
+}
+.diyw .altcolor h2 {
+	color:#000000;
+}
+.diyw .altcolor a:link,
+.diyw .altcolor a:visited {
+	color:#000000;
+}
+.diyw .altcolor a:active, 
+.diyw .altcolor a:hover {
+	color:#000000;
+}
+.diyw .altcolor div.hr {
+	border-color:#000000;
+}
