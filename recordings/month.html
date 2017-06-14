@@ -1,0 +1,8 @@
+<h3>Recordings</h3>
+<ul id=recordings">
+  <% @items.find_all("#{@rep.item.identifier.to_s.gsub('.html','')}/*.yaml").each do |rec| %>
+    <li class="recording">
+      <a href="<%= rec.path %>"><%= rec[:date] %></a>
+    </li>
+  <% end %>
+</ul>

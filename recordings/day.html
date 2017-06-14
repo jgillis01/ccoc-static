@@ -5,10 +5,10 @@
       <p>Title: <%= rec[:title] %></p>
       <p>Author: <%= rec[:author] %></p>
       <p>Date: <%= rec[:date] %></p>
-        <audio controls="controls">
-        Your browser does not support the <code>audio</code> element.
+        <audio controls>
+        Your browser does not support the audio element.
         <source src="https://s3.amazonaws.com/ccoc-recordings/<%= File.basename(rec.path, '.yaml') %>.ogg" type="audio/ogg">
-        <source src="https://s3.amazonaws.com/ccoc-recordings/<%= File.basename(rec.path, '.yaml') %>.mp3" type="audio/mp3">
+        <source src="https://s3.amazonaws.com/ccoc-recordings/<%= File.basename(rec.path, '.yaml') %>.mp3" type="audio/mpeg">
       </audio>
     </li>
   <% end %>
