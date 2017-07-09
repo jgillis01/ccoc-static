@@ -1,0 +1,69 @@
+<% content = @items.find_all("/recordings/#{day_part}/*.yaml") %>
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Central Church of Christ - <%= @item[:title] %></title>
+    <link rel="stylesheet" href="/style/screen.scs.css">
+
+    <!-- you don't need to keep this, but it's cool for stats! -->
+    <meta name="generator" content="Nanoc <%= Nanoc::VERSION %>">
+  </head>
+  <body>
+      <div id="main" class="container">
+        <div class="row">
+          <div class="col-md-1"></div>
+          <div class="col-md-10">
+            <div class="row header">
+              <header class="col-md-12">
+                <h1 class="text-center"> Central Church of Christ</h1>
+              </header>
+            </div>
+            <div class="row content">
+              <div id="sidebar" class="col-md-3">
+                <ul>
+                  <li><a href="http://centralchurchofchrist.net/">Home</a></li>
+                  <li><a href="http://centralchurchofchrist.net/about-us">About Us</a></li>
+                  <li><a href="http://centralchurchofchrist.net/recordings">Old Recordings</a></li>
+                  <li><a href="/recordings">New Recordings</a></li>
+                </ul>
+              </div>
+              <div id="content" class="col-md-6">
+                <h3>Recordings</h3>
+                <ul id=recordings">
+                  <% content.each do |rec| %>
+                    <li class="recording">
+                      <p>Title: <%= rec[:title] %></p>
+                      <p>Author: <%= rec[:author] %></p>
+                      <p>Date: <%= rec[:date] %></p>
+                        <audio controls="controls">
+                        Your browser does not support the <code>audio</code> element.
+                        <source src="https://s3.amazonaws.com/ccoc-recordings/<%= File.basename(rec.path, '.yaml') %>.mp3" type="audio/mpeg">
+                        <source src="https://s3.amazonaws.com/ccoc-recordings/<%= File.basename(rec.path, '.yaml') %>.ogg" type="audio/ogg">
+                      </audio>
+                    </li>
+                  <% end %>
+                </ul>
+              </div>
+              <div id="info" class="col-md-3">
+                <h3 id="nav">Navigation</h3>
+                <ul>
+                  <li class="nav">
+                    <div>
+                      <% text = month_part.gsub(/(\d{4})\/(\d{2})/,'\2-\1') %>
+                      <a href=<%= "\"/recordings/#{month_part}\"" %>><%= text %></a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-1"></div>
+        </div>
+      </div>
+    <script src="/javascripts/jquery-3.2.1.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+    <script src="/javascripts/bootstrap.min.js"></script>
+  </body>
+</html>
