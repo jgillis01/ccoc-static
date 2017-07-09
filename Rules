@@ -5,15 +5,20 @@ Compass.add_project_configuration('config.rb')
 
 passthrough '/javascripts/*'
 
-#compile '/recordings/.*' do
-#  filter :erb
-#  layout '/default.*'
-#end
+compile '/recordings.html' do
+  filter :erb
+end
+
+compile '/recordings/**/*.html' do
+  filter :erb
+end
 
 compile '/**/*.html' do
   layout '/default.*'
   filter :erb
 end
+
+
 
 # This is an example rule that matches Markdown (.md) files, and filters them
 # using the :kramdown filter. It is commented out by default, because kramdown

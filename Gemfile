@@ -8,4 +8,5 @@ gem "bootstrap", "4.0.0.alpha6"
 
 group :development do
   gem "pry"
+  gem 'awesome_print'
 end
