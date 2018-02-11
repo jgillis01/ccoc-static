@@ -4,20 +4,12 @@ body {
   font-family: $font-body;
   background-color: #eee;
 
-  .recording {
-    background-color: #eeeeee;
-    padding: 10px;
-    border-radius: 5px;
-    margin-bottom: 10px;
-    border: 2px solid;
-    border-color: gray;
-  }
-
   #main {
     margin-top: 15px;
 
     header {
       background-image: url('/img/emotionheader.jpg');
+      background-size: 100%;
       height: 210px;
 
       h1 {
@@ -25,19 +17,44 @@ body {
         opacity: 0.5;
         background-color: #ffffff;
       }
-
     }
 
     .content {
       margin-top: 20px;
       background-color: white;
 
+      td {
+        text-align: left;
+        padding: 2px;
+      }
+
     }
 
-    .header {
-      background: white;
+    .recording {
+      background-color: #eeeeee;
       padding: 10px;
+      border-radius: 5px;
+      margin-bottom: 10px;
+      border: 2px solid;
+      border-color: gray;
     }
 
+    .cards {
+      height: 150px;
+    }
+
+    p.addr {
+      margin: 0px;
+    }
+
+    #info {
+      th {
+        font-weight: bold;
+      }
+      td {
+        text-align: right;
+        padding: 3px;
+      }
+    }
   }
 }
