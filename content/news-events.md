@@ -1,5 +1,8 @@
 ## Events for 2018
 
+{:.table .table-striped .table-bordered .table-hover}
+ | Dates                      | Activities                                     |
+ | -------------------------- | ---------------------------------------------- |
  | Jan 7, Sun                 | All Present Day                                |
  | March 11, Sun              | Friends Day, fellowship meal                   |
  | April 8-12, Sun - Thurs    | Spring Gospel Meeting, Brad Harrub             |

@@ -13,65 +13,82 @@
     <div id="main" class="container">
       <div class="row">
         <header class="col">
-          <h1 class="text-center">Central Church of Christ</h1>
+          <h1 class="text-center align-middle">Central Church of Christ</h1>
         </header>
       </div>
+      <div class="row">
+        <div class="col">
+          <nav class="nav nav-fill">
+            <a class="nav-link" href="/">Home</a>
+            <a class="nav-link" href="/about">About Us</a>
+            <a class="nav-link" href="/mission-works">Mission Works</a>
+            <a class="nav-link" href="/news-events">News & Events</a>
+            <a class="nav-link" href="/personal-study">Personal Study</a>
+            <a class="nav-link" href="/recordings">Recordings</a>
+            <a class="nav-link" href="http://centralchurchofchrist.net/recordings">Old Recordings</a>
+          </nav>
+        </div>
+      </div>
       <div class="row content">
-        <ul class="nav flex-column">
-          <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="/about">About Us</a></li>
-          <li class="nav-item"><a class="nav-link" href="/mission-works">Mission Works</a></li>
-          <li class="nav-item"><a class="nav-link" href="/news-events">News & Events</a></li>
-          <li class="nav-item"><a class="nav-link" href="/personal-study">Personal Study</a></li>
-          <li class="nav-item"><a class="nav-link" href="http://centralchurchofchrist.net/recordings">Old Recordings</a></li>
-          <li class="nav-item"><a class="nav-link" href="/recordings">New Recordings</a></li>
-        </ul>
-        <div id="content" class="col">
+        <div id="content" class="col-9">
           <%= yield %>
         </div>
-        <div id="info" class="col-3">
+        <div id="info" class="col">
           <div class="row">
             <div class="col">
-              <h3>Contact Us</h3>
-              <p class="addr"><b>Central Church of Christ</b></p>
-              <p class="addr">90 Waverly Court</p>
-              <p class="addr">Martinsburg, WV 25403</p>
-              <p><b>Phone:</b> +1 304 263-9249</p>
+              <div class="card">
+                <div class="card-header">
+                  Contact Us
+                </div>
+                <div class="card-body">
+                  <p class="addr">Central Church of Christ</p>
+                  <p class="addr">90 Waverly Court</p>
+                  <p class="addr">Martinsburg, WV 25403</p>
+                  <p>Phone: +1 304 263-9249</p>
+                </div>
+              </div>
             </div>
           </div>
           <div class="row">
             <div class="col">
-              <h3>Join Us</h3>
-              <table>
-                <tr>
-                  <th>Sunday</th>
-                </tr>
-                <tr>
-                  <td>9:45AM</td>
-                  <td>Bible Study</td>
-                </tr>
-                <tr>
-                  <td>10:45AM</td>
-                  <td>Morning Worship</td>
-                </tr>
-                <tr>
-                  <td>6:00PM</td>
-                  <td>Evening Worship</td>
-                </tr>
-                <tr>
-                  <th>Wednesday</th>
-                </tr>
-                <tr>
-                  <td>7:00PM</td>
-                  <td>Bible Study</td>
-                </tr>
-              </table>
+              <div class="card">
+                <div class="card-header">
+                  Join Us
+                </div>
+                <div class="card-body">
+                  <table class="table">
+                    <tr>
+                      <th>Sunday</th>
+                    </tr>
+                    <tr>
+                      <td>9:45AM</td>
+                      <td>Bible Study</td>
+                    </tr>
+                    <tr>
+                      <td>10:45AM</td>
+                      <td>Morning Worship</td>
+                    </tr>
+                    <tr>
+                      <td>6:00PM</td>
+                      <td>Evening Worship</td>
+                    </tr>
+                    <tr>
+                      <th>Wednesday</th>
+                    </tr>
+                    <tr>
+                      <td>7:00PM</td>
+                      <td>Bible Study</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    <script src="/javascripts/jquery-3.2.1.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
-    <script src="/javascripts/bootstrap.min.js"></script>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </body>
 </html>
