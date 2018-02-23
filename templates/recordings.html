@@ -15,51 +15,65 @@
     <div id="main" class="container">
       <div class="row">
         <header class="col">
-          <h1 class="text-center"> Central Church of Christ</h1>
+          <h1 class="text-center align-middle"> Central Church of Christ</h1>
         </header>
       </div>
-      <div class="row content">
-        <ul class="nav flex-column">
-          <li class="nav-item"><a class="nav-link" href="http://centralchurchofchrist.net/">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="http://centralchurchofchrist.net/about-us">About Us</a></li>
-          <li class="nav-item"><a class="nav-link" href="http://centralchurchofchrist.net/mission-works">Mission Works</a></li>
-          <li class="nav-item"><a class="nav-link" href="http://centralchurchofchrist.net/news-events">News & Events</a></li>
-          <li class="nav-item"><a class="nav-link" href="http://centralchurchofchrist.net/personal-study">Personal Study</a></li>
-          <li class="nav-item"><a class="nav-link" href="http://centralchurchofchrist.net/recordings">Old Recordings</a></li>
-          <li class="nav-item"><a class="nav-link" href="/recordings">New Recordings</a></li>
-        </ul>
-        <div id="content" class="col">
-          <h3>Recordings</h3>
-          <ul id=recordings">
-            <% content.each do |rec| %>
-              <li class="recording">
-                <p>Title: <%= rec[:title] %></p>
-                <p>Author: <%= rec[:author] %></p>
-                <p>Date: <%= rec[:date] %></p>
-                <p><a href="https://s3.amazonaws.com/ccoc-recordings/<%= File.basename(rec.path, '.yaml') %>.mp3" download="<%= File.basename(rec.path, '.yaml') %>.mp3">Download</a></p>
-                  <audio controls="controls">
-                  Your browser does not support the <code>audio</code> element.
-                  <source src="https://s3.amazonaws.com/ccoc-recordings/<%= File.basename(rec.path, '.yaml') %>.mp3" type="audio/mpeg">
-                  <source src="https://s3.amazonaws.com/ccoc-recordings/<%= File.basename(rec.path, '.yaml') %>.ogg" type="audio/ogg">
-                </audio>
-              </li>
-            <% end %>
-          </ul>
+      <div class="row">
+        <div class="col">
+          <nav class="nav nav-fill">
+            <a class="nav-link" href="/">Home</a>
+            <a class="nav-link" href="/about">About Us</a>
+            <a class="nav-link" href="/mission-works">Mission Works</a>
+            <a class="nav-link" href="/news-events">News & Events</a>
+            <a class="nav-link" href="/personal-study">Personal Study</a>
+            <a class="nav-link" href="/recordings">Recordings</a>
+            <a class="nav-link" href="http://centralchurchofchrist.net/recordings">Old Recordings</a>
+          </nav>
         </div>
-        <div id="info" class="col-3">
+      </div>
+      <div class="row content">
+        <div id="content" class="col-9">
+          <div class="row">
+            <h3 class="col">Recordings</h3>
+          </div>
+          <div class="row">
+            <% content.each do |rec| %>
+            <div class="col">
+              <div class="card">
+                <div class="card-header font-weight-bold"><%= rec[:title] %></div>
+                <div class="card-body">
+                  <p class="card-text">
+                    <span class="font-weight-bold">Author:</span> <%= rec[:author] %><br>
+                    <span class="font-weight-bold">Date:</span> <%= rec[:date] %>
+                  </p>
+                  <a class="card-link" href="https://s3.amazonaws.com/ccoc-recordings/<%= File.basename(rec.path, '.yaml') %>.mp3" download="<%= File.basename(rec.path, '.yaml') %>.mp3">Download</a> (Right-click and Save)
+                </div>
+                <div class="card-footer">
+                  <audio controls="controls">
+                    Your browser does not support the <code>audio</code> element.
+                    <source src="https://s3.amazonaws.com/ccoc-recordings/<%= File.basename(rec.path, '.yaml') %>.mp3" type="audio/mpeg">
+                    <source src="https://s3.amazonaws.com/ccoc-recordings/<%= File.basename(rec.path, '.yaml') %>.ogg" type="audio/ogg">
+                  </audio>
+                </div>
+              </div>
+            </div>
+            <% end %>
+          </div>
+        </div>
+        <div id="info" class="col">
           <h3 id="nav">Navigation</h3>
-          <ul>
+          <nav class="nav flex-column">
             <% items.each do |item| %>
             <% text = item.identifier.to_s.gsub('/recordings/', '').gsub('.html', '').gsub(/(\d{4})/,'\1') %>
             <% link = item.identifier.to_s.gsub('.html', '') %>
-            <li><a href="<%= link %>"><%= text %></a></li>
+            <a class="nav-link" href="<%= link %>"><%= text %></a>
             <% end %>
-          </ul>
+          </nav>
         </div>
       </div>
     </div>
-    <script src="/javascripts/jquery-3.2.1.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
-    <script src="/javascripts/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </body>
 </html>
