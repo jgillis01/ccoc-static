@@ -1,10 +1,12 @@
-## Personal Study ##
+---
+title: "Personal Study"
+---
 
 ### Daily Bible Reading Schedule ###
 
 A 365-day schedule for daily Bible reading all year long. This is the schedule published throughout the year in our weekly Bulletin, including both Old and New Testament readings daily. Some of these readings periodically appear on our Facebook Page for your encouragement.
 
-<a href="https://www.centralchurchofchrist.net/app/download/964187409/Daily+Bible+Reading.pdf">Daily Bible Reading.pdf</a>
+<a href="/assets/daily_bible_reading.pdf">Daily Bible Reading.pdf</a>
 Adobe Acrobat document \[101.0 KB\]
 
 Regular study and application is needed for knowledge to grow.  In fact, without it, our bible knowledge deteriorates.  One attribute of a true Christian is his/her hunger and thirst for knowledge.  Whether a babe in Christ or a Christian ready for “strong meat”, tools are available online to assist in your study.

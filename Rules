@@ -37,6 +37,8 @@ route '/**/*.{html,md}' do
   end
 end
 
+passthrough '/assets/*'
+
 compile '/style/*' do
   filter :sass, Compass.sass_engine_options
 end

@@ -2,7 +2,7 @@
 title: About Us
 ---
 
-## About Us
+## About Us ##
 
 The Central church of Christ in Martinsburg, WV, is one of thousands of churches of Christ across the nation and around the world. The church of Christ endeavors to serve God with the same simplicity that characterized His faithful church in the first century. As the body of Christ, we recognize Christ as our Head by believing in his word as the only authority in religion, by actively teaching the world about Christ and his kingdom, by encouraging and supporting other Christians, and by trying to provide for the spiritual needs of our fellow man.
 
