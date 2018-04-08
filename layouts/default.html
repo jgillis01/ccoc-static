@@ -16,11 +16,16 @@
           <h1 class="text-center align-middle">Central Church of Christ</h1>
         </header>
       </div>
-      <div class="row">
+      <div class="row" id="main-nav">
         <div class="col">
-          <nav class="nav flex-column flex-md-row">
+          <nav class="nav nav-justified flex-column flex-md-row">
             <a class="nav-link" href="/">Home</a>
-            <a class="nav-link" href="/about">About Us</a>
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" href="#">About Us</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="/about">Who We Are</a>
+              <a class="dropdown-item" href="/ministers">Ministers</a>
+              <a class="dropdown-item" href="/elders-deacons">Elders and Deacons</a>
+            </div>
             <a class="nav-link" href="/mission-works">Mission Works</a>
             <a class="nav-link" href="/news-events">News & Events</a>
             <a class="nav-link" href="/personal-study">Personal Study</a>
@@ -45,6 +50,7 @@
                   <p class="addr">90 Waverly Court</p>
                   <p class="addr">Martinsburg, WV 25403</p>
                   <p>Phone: +1 304 263-9249</p>
+                  <p><a href="mailto:centralchurchofchristmtsbg@gmail.com">Email Us</a>!</p>
                 </div>
               </div>
             </div>

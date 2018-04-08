@@ -1,3 +1,7 @@
+---
+title: "News and Events"
+---
+
 ## Events for 2018
 
 {:.table .table-striped .table-bordered .table-hover}

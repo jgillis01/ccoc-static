@@ -1,3 +1,7 @@
+---
+title: "Mission Works"
+---
+
 ## Mission Works ##
 
 The Central church of Christ in Martinsburg, WV, takes seriously Christ’s Great Commission to take the Gospel to all parts of the world.  In addition to occasional one-time requests for support we provide regular support to a number of works in the United States and abroad.  An email link is provided so that you may send a word of encouragement to these missionaries.

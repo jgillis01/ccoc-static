@@ -14,9 +14,15 @@ body {
       min-height: 210px;
 
       h1 {
-        margin-top: 1rem;
-        background-color: #ffffff;
+        color: white;
+        font-size: 3em;
       }
+    }
+
+    #main-nav {
+      background-color: #f7f7f9;
+      padding: 1em;
+      margin-bottom: 0.5em;
     }
 
     .content {
@@ -46,6 +52,27 @@ body {
         text-align: left;
       }
 
+    }
+
+    #ministers {
+
+      img {
+        height: 157px;
+        width: 157px;
+
+      }
+    }
+
+    #elders,#deacons {
+
+      img {
+        width: 157px;
+        height: 157px;
+      }
+
+      .card {
+        background-color: #f7f7f9;
+      }
     }
 
     .recording {
