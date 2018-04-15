@@ -4,6 +4,15 @@ body {
   font-family: $font-body;
   background-color: #eee;
 
+  #find-us {
+    padding: 0px;
+
+    #map {
+      height: 400px;
+      margin: 0;
+    }
+  }
+
   #main {
     margin-top: 1rem;
 
