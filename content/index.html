@@ -51,6 +51,10 @@ title: "Home"
       map: map,
       title: "90 Waverly Ct. Martinsburg, WV 25403"
     });
+
+    marker.addListener('click', function() {
+      window.open("https://goo.gl/maps/wJUXEhc6oUA2");
+    });
   }
 </script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCL9CsjjrVY3BuO_AhnXiXYkVgIMDvKTk8&callback=initMap"
