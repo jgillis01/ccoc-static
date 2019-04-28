@@ -4,12 +4,9 @@ require 'pry'
 Compass.add_project_configuration('config.rb')
 
 passthrough '/javascripts/*'
+passthrough '/recordings/**/*'
 
 compile '/recordings.html' do
-  filter :erb
-end
-
-compile '/recordings/**/*.html' do
   filter :erb
 end
 
