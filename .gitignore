@@ -4,4 +4,3 @@ tmp/*
 aws-env.sh
 ./recordings-bak/*
 content/recordings/*
-content/recordings.html
