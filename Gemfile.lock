@@ -39,7 +39,8 @@ GEM
     hamster (3.0.0)
       concurrent-ruby (~> 1.0)
     json_schema (0.20.1)
-    kramdown (1.17.0)
+    kramdown (2.3.0)
+      rexml
     method_source (0.9.2)
     multi_json (1.13.1)
     nanoc (4.11.0)
@@ -64,6 +65,7 @@ GEM
     rb-inotify (0.10.0)
       ffi (~> 1.0)
     ref (2.0.0)
+    rexml (3.2.4)
     sass (3.4.25)
     slow_enumerator_tools (1.1.0)
     tomlrb (1.2.8)
